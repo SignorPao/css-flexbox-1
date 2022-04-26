@@ -1,0 +1,349 @@
+// main: style.less
+
+/* footer */
+.footer-block {
+    background: @yellow;
+    color: @white;
+    padding: 40px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    .footer-block-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        
+        & .header-logo {
+            display: flex;
+            flex-direction: column;
+            order: 0;
+            
+            & h1 {
+                transition: .2s ease-in-out;
+                font-family: @font-one;
+                font-size: 2rem;
+                text-align: center;
+            }
+            
+            & .with-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                
+                & h5 {
+                    transition: .2s ease-in-out;
+                    font-size: .5rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;;
+                    font-weight: 900;
+                }
+
+                & img {
+                    width: .8rem;
+                }
+            }
+    
+        }
+    
+        & .social {
+            order: 1;
+    
+            & h6 {
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                font-weight: 900;
+                transition: .2s ease-in-out;
+            }
+    
+            & .items {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+    
+                & .social-item {
+                    display: flex;
+                    width: 24px;
+                    height: 24px;
+                    background-color: @yellow;
+                    border-radius: 2px;
+                    justify-content: center;
+                    align-items: center;
+        
+                    & a {
+                        font-size: 18px;
+                        color: @white;
+                        transition: .2s ease-in-out;
+                    }
+                    
+                    &:hover {
+                        background-color: @white;
+        
+                        a {
+                            color: @yellow;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        & .shop, 
+        & .learn {
+
+            & h5 {
+                font-size: .8rem;
+                text-transform: uppercase;
+            }
+
+            & ul {
+
+                & li {
+                    list-style: none;
+
+                    & a {
+                        color: @white;
+                        text-decoration: none;
+                        font-size: 0.8rem;
+
+                        &:hover {
+                            border-bottom: 1px solid @white;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .shop {
+            order: 2;
+        }
+
+        & .learn {
+            order: 3;
+        }
+    }
+
+    .footer-block-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: nowrap;
+
+        & .subscribe {
+            width: 100%;
+            order: 4;
+
+            & input {
+                width: 65%;
+                box-sizing: border-box;
+                outline: none;
+                border: 1px solid @white;
+                padding: 5px;
+                transition: .2s ease-in-out;
+                color: rgba(223, 223, 223, 0.623);
+                background-color: @yellow;
+                font-size: .7rem;
+                font-weight: 700;
+
+                &:focus {
+                    box-shadow: 0 0 5px @white;
+                    border: 1px solid @white;
+                    color: @black;
+                }
+            }
+
+            & button {
+                width: fit-content;
+                border: 1px solid @white;
+                background-color: @white;
+                cursor: pointer;
+                padding: 5px;
+                transition: .2s;
+                outline: none;
+                color: @yellow;
+                font-size: .7rem;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: transparent;
+                    color: @white;
+                }
+            }
+        }
+
+        & .copyright {
+            font-size: .7rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            order: 5;
+
+            & a {
+                text-decoration: none;
+                color: @white;
+
+                &:hover {
+                    border-bottom: 1px solid @white;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 320px) {
+        .footer-block-bottom {
+            & .subscribe {
+                & input {
+                    width: 77%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 480px) {
+        .footer-block-top {
+
+            & .header-logo {
+
+                & h1 {
+                    font-size: 3rem;
+                }
+
+                & .with-icon {
+
+                    & h5 {
+                        font-size: 0.7rem;
+                        letter-spacing: 1px;
+                    }
+
+                    & img {
+                        width: 1.3rem;
+                    }
+                }
+            }
+
+            & .social {
+
+                & h6 {
+                    font-size: 0.9rem;
+                }
+
+                & .items {
+
+                    & .social-item {
+                        width: 36px;
+                        height: 36px;
+
+                        & a {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+
+            & .shop, 
+            & .learn {
+
+                & h5 {
+                    font-size: 1rem;
+                }
+
+                & ul {
+                    & li {
+                        & a {
+                            font-size: 1rem;
+
+                            &:hover {
+                                border-bottom: 2px solid @white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-block-bottom {
+
+            & .subscribe {
+
+                & input {
+                    width: 78%;
+                    padding: 8px;
+                    font-size: 1rem;
+                }
+
+                & button {
+                    padding: 8px;
+                    font-size: 1rem;
+                }
+            }
+
+            & .copyright {
+                font-size: 0.9rem;
+
+                & a:hover {
+                    border-bottom: 2px solid @white;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-block-top {
+            flex-flow: row wrap;
+
+            & .header-logo {
+                flex: 1;
+
+                & .with-icon {
+                    & h5 {
+                        font-size: 0.8rem;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+
+            & .social {
+                flex: 1;
+            }
+
+            & .shop {
+                flex: 1;
+            }
+
+            & .learn {
+                flex: 1;
+            }
+        }
+
+        .footer-block-bottom {
+            flex-flow: row wrap;
+
+            & .subscribe {
+                flex: 1;
+                order: 5;
+
+                & input {
+                    width: 70%;
+                }
+            }
+
+            & .copyright {
+                flex: 1;
+                order: 4;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-block-top {
+            & .header-logo h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}

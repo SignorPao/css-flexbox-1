@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BakeryWebsite</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- navigation -->
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-logo">BakeryWebsite</li>
+                <li class="navbar-toggle"><i class="fa-solid fa-bars"></i></li>
+                <li class="navbar-links"><a href="#">Shop</a></li>
+                <li class="navbar-links"><a href="#">The workshop</a></li>
+                <li class="navbar-links"><a href="#">Discover</a></li>
+                <li class="navbar-links"><a href="#">Catering</a></li>
+                <li class="navbar-links"><a href="#">Careers</a></li>
+                <li class="navbar-links"><a href="#">Locations</a></li>
+                <li class="navbar-links"><a href="#">Contact</a></li>
+                <!-- <li id="nav-btn" class="navbar-links"><a  href="#">Order online</a></li> -->
+                <li class="navbar-links"><a id="nav-btn" href="#">Order online</a></li>
+            </ul>
+        </nav>
+         
+        <!-- header -->
+        <header class="header-carousel">
+            <div class="carousel">
+                <div class="slide fade">
+                    <img class="img-1" src="./img/header-carousel/00.jpg" alt="">
+                    <div id="slide1" class="caption">
+                        <h1>The Bakery</h1>
+                        <h1>Website</h1>
+                        <h5>Sed laoreet nunc sollicitudin</h5>
+                        <a class="carousel-btn" href="#">Curabitur</a>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img class="img-2" src="./img/header-carousel/01.jpg" alt="">
+                    <div id="slide2" class="caption">
+                        <h1>Sed iaculis</h1>
+                        <h1>Nec elit</h1>
+                        <h1>At sodales</h1>
+                        <h5>Sed non sodales leo</h5>
+                        <a class="carousel-btn" href="#">Suspendisse est</a>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img class="img-3" src="./img/header-carousel/03.jpg" alt="">
+                    <div id="slide3" class="caption">
+                        <h5>Proin nisl purus, maximus in laoreet in</h5>
+                        <h1>Phasellus</h1>
+                        <h1>Quisque condimentum</h1>
+                        <a class="carousel-btn" href="#">Fusce non</a>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img class="img-4" src="./img/header-carousel/07.jpg" alt="">
+                    <div id="slide4" class="caption">
+                        <h1>Etiam quis elit</h1>
+                        <h1>Vitae tellus congue</h1>
+                        <h1>Lacinia et ac est</h1>
+                        <h1>Vestibulum</h1>
+                        <a class="carousel-btn" href="#">Pellentesque</a>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img class="img-5" src="./img/header-carousel/05.jpg" alt="">
+                    <div id="slide5" class="caption">
+                        <h1>Viverra tristique</h1>
+                        <h5>Quisque eget dui pulvinar</h5>
+                        <a class="carousel-btn" href="#">Sed rutrum</a>
+                    </div>
+                </div>
+                <a class="prev" onclick="nextSlide(-1)"></a>
+                <a class="next" onclick="nextSlide(1)"></a>
+                <br>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="main-container">
+            <!-- <img src="./img/header-carousel/08.jpg" alt=""> -->
+            <div class="main-block-1">
+                <div class="container">
+                    <div class="cards1">
+                        <div class="card1">
+                            <a href="#">
+                                <picture class="thumbnail">
+                                    <img src="./img/goods/10.jpg" alt="">
+                                </picture>
+                                <div class="card-content">
+                                    <h5>Aenean nec arcu</h5>
+                                    <p>Non urna ornare consectetur finibus quis lectus elementum</p>
+                                </div>
+                            </a>
+                            <p>&#36 17.50</p>
+                        </div>
+                        <div class="card2">
+                            <a href="#">
+                                <picture class="thumbnail">
+                                    <img src="./img/goods/14.jpg" alt="">
+                                </picture>
+                                <div class="card-content">
+                                    <h5>Mauris at vestibulum</h5>
+                                    <p>Mauris varius sit amet nunc non pretium</p>
+                                </div>
+                            </a>
+                            <p>&#36 12.50</p>
+                        </div>
+                        <div class="card3">
+                            <a href="#">
+                                <picture class="thumbnail">
+                                    <img src="./img/goods/15.jpg" alt="">
+                                </picture>
+                                <div class="card-content">
+                                    <h5>In mattis id sem a scelerisque</h5>
+                                    <p>Etiam accumsan ipsum in elit semper, vitae viverra nunc consectetur</p>
+                                </div>
+                            </a>
+                            <p>&#36 11.20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-block-2">
+                <div class="overlay-block-2">
+                    <h5>Pellentesque bibendum non lacus quis placerat</h5>
+                    <h1>Praesent elementum</h1>
+                    <a href="#">
+                        <h4>Nam sem justo <i class="fa-solid fa-arrow-right-long"></i></h4>
+                    </a>
+                </div>
+            </div>
+            <div class="main-block-3">
+                <div class="container">
+                    <div class="cards2">
+                        <div class="card1">
+                            <div class="hoverwrap">
+                                <img src="./img/goods/11.jpg"/>
+                                <div class="hovertxt">
+                                    <h3>Sed viverra</h3>
+                                    <p>Nullam nec ex eget magna rutrum congue</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h5>Mauris ultricies ipsum</h5>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="hoverwrap">
+                                <img src="./img/goods/12.jpg"/>
+                                <div class="hovertxt">
+                                    <h3>Proin a neque</h3>
+                                    <p>Vivamus tincidunt imperdiet neque</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h5>Ut gravida sapien</h5>
+                            </div>
+                        </div>
+                        <div class="card3">
+                            <div class="hoverwrap">
+                                <img src="./img/goods/13.jpg"/>
+                                <div class="hovertxt">
+                                    <h3>Ut orci nulla</h3>
+                                    <p>Vestibulum placerat, libero vel dictum imperdiet</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h5>Fusce congue</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer-block">
+            <div class="footer-block-top">
+                <div class="header-logo">
+                    <h1>Bakery</h1>
+                    <h1>Website</h1>
+                    <div class="with-icon">
+                        <h5>New York</h5>
+                        <img src="./img/icons/cake1.svg"/>
+                        <h5>Bakery</h5>
+                    </div>
+                </div>
+                <div class="social">
+                    <h6>Connect with us</h6>
+                    <div class="items">
+                        <div class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop">
+                    <h5>Shop</h5>
+                    <ul>
+                        <li><a href="#">Maecenas</a></li>
+                        <li><a href="#">Fusce fermentum</a></li>
+                        <li><a href="#">Nullam tincidunt</a></li>
+                        <li><a href="#">Cras euismod</a></li>
+                        <li><a href="#">Praesent</a></li>
+                        <li><a href="#">Aenean euismod</a></li>
+                        <li><a href="#">Nulla facilisi</a></li>
+                        <li><a href="#">Mauris</a></li>
+                        <li><a href="#">Quisque</a></li>
+                    </ul>
+                </div>
+                <div class="learn">
+                    <h5>Curabitur</h5>
+                    <ul>
+                        <li><a href="#">Sed scelerisque luctus</a></li>
+                        <li><a href="#">Pellentesque</a></li>
+                        <li><a href="#">Nulla iaculis</a></li>
+                        <li><a href="#">Nullam</a></li>
+                        <li><a href="#">Cras vitae vulputate ipsum</a></li>
+                        <li><a href="#">Sed nec</a></li>
+                        <li><a href="#">Praesent ultricies</a></li>
+                        <li><a href="#">Fusce id ornare dolor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-block-bottom">
+                <div class="subscribe">
+                    <input type="text" placeholder="sign up for our newsletter"><button>Subscribe</button>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; 2022 BakeryWebsite</p>
+                    <p>All rights reserved</p>
+                    <p>
+                        <a href="https://github.com/SignorPao">Made by @signorPao</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./script/script.js"></script>
+    
+</body>
+</html>

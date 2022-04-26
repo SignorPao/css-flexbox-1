@@ -1,0 +1,22 @@
+// out: ../css/style.css, compress: false
+
+@import "reset";
+@import "variables";
+
+/* wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: @font-four;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+@import "navigation";
+@import "header";
+@import "main";
+@import "footer";
+@import "mixins";

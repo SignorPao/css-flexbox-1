@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Elsie
+- Font Author: Copyright (c) 2010-2012, Alejandro Inler (alejandroinler@gmail.com), with Reserved Font Name 'Elsie'
+- Font Source: http://fonts.gstatic.com/s/elsie/v11/BCaqqZABrez54x6q2-1IU6QeXSBk.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
